@@ -31,7 +31,10 @@ module.exports = {
 			},
 			{
 				test: /\.(eot|woff|woff2|svg|ttf)$/,
-				loader: 'file-loader'
+				loader: 'file-loader',
+				options: {
+					publicPath: '/dist/style'
+				}
 			},
 			{
 				test: /\.scss$/,

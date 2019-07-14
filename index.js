@@ -1,6 +1,10 @@
 import FabricUI from '@or-change/fabric-ui';
 
-const pluginList = [];
+import ButtonGroupPlugin from './src/buttonGroup';
+
+const pluginList = [
+	ButtonGroupPlugin
+];
 
 export default function install(Vue, options) {
 	Vue.use(FabricUI, options);

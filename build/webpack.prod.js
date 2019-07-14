@@ -1,3 +1,4 @@
+const path = require('path');
 const webpackBase = require('./webpack.base');
 
 webpackBase.entry = {

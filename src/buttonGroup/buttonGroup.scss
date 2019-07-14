@@ -1,0 +1,222 @@
+@import 'office-ui-fabric-core/src/sass/_References.scss';
+
+.ms-button-group {
+	display: inline-block;
+
+	.ms-button-border {
+		border-radius: 0;
+	}
+
+	.ms-button-primary {
+		border-color: $ms-color-blue;
+	}
+}
+
+.ms-button-group-sm {
+	.ms-button-sm, .ms-button-md, .ms-button-lg {
+		a, button {
+			padding: 6px;
+			font-size: $ms-font-size-12;
+		}
+	
+		.ms-icon {
+			margin-right: 4px;
+		}
+	
+		&.ms-button-compound {
+			a, button {
+				padding: 14px 10px;
+			}
+	
+			.ms-description {
+				margin-top: 3px;
+			}
+		}
+
+		button.ms-button-not-split {
+			margin-left: -2px;
+			padding-left: 0px;
+			padding-right: 6px;
+		}
+	
+		.ms-dropdown-triangle {
+			border-width: 4px;
+			margin-top: 4px;
+		}
+	}
+}
+
+.ms-button-group-md {
+	.ms-button-sm, .ms-button-md, .ms-button-lg {
+		a, button {
+			padding: 8px;
+			font-size: $ms-font-size-14;
+		}
+	
+		.ms-icon {
+			margin-right: 6px;
+		}
+	
+		&.ms-button-compound {
+			a, button {
+				padding: 16px 12px;
+			}
+	
+			.ms-description {
+				margin-top: 5px;
+			}
+		}
+
+		button.ms-button-not-split {
+			margin-left: -2px;
+			padding-left: 0px;
+			padding-right: 8px;
+		}
+	
+		.ms-dropdown-triangle {
+			border-width: 5px;
+			margin-top: 3px;
+		}
+	}
+}
+
+.ms-button-group-lg {
+	.ms-button-sm, .ms-button-md, .ms-button-lg {
+		a, button {
+			padding: 11px;
+			font-size: $ms-font-size-16;
+		}
+	
+		.ms-icon {
+			margin-right: 6px;
+		}
+	
+		&.ms-button-compound {
+			a, button {
+				padding: 20px 16px;
+			}
+	
+			.ms-description {
+				margin-top: 5px;
+			}
+		}
+
+		button.ms-button-not-split {
+			margin-left: -5px;
+			padding-left: 0px;
+			padding-right: 10px;
+		}
+	
+		.ms-dropdown-triangle {
+			border-width: 6px;
+			margin-top: 5px;
+		}
+	}
+}
+
+.ms-button-group-no-border {
+	padding: 1px;
+
+	.ms-button-container:first-child .ms-button,
+	.ms-button-container .ms-button,
+	.ms-button-container:last-child .ms-button {
+		border: none;
+		border-radius: 0px;
+	}
+}
+
+.ms-button-group-horizontal {
+	.ms-button-container {
+		float: left;
+	}
+
+	.ms-button {
+		border-left: none;
+	}
+
+	.ms-button-container:first-child {
+
+		.ms-button {
+			border-left: 1px solid transparent;
+		}
+		
+		.ms-button-border {
+			border-top-left-radius: 2px;
+			border-bottom-left-radius: 2px;
+		}
+
+		.ms-button-standard {
+			border-color: $ms-color-gray110;
+		}
+
+		.ms-button-disabled {
+			border-color: darken($ms-color-white, 4.5%);
+		}
+	}
+
+	.ms-button-container:last-child {
+		.ms-button-border {
+			border-top-right-radius: 2px;
+			border-bottom-right-radius: 2px;
+		}
+	}
+}
+
+.ms-button-group-vertical {
+	.ms-button-container {
+		width: 100%;
+		display: block;
+	}
+
+	.ms-button {
+		position: relative;
+		border-top: none;
+		display: block;
+		width: 100%;
+	}
+
+	.ms-button button:first-child {
+		width: 100% !important;
+	}
+
+	.ms-button-no-split {
+		.ms-button-label {
+			i {
+				width: 100%;
+			}
+		}
+
+		.ms-button-dropdown {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+	
+	.ms-button-container:first-child {
+
+		.ms-button {
+			border-top: 1px solid transparent;
+		}
+		
+		.ms-button-border {
+			border-top-left-radius: 2px;
+			border-top-right-radius: 2px;
+		}
+
+		.ms-button-standard {
+			border-color: $ms-color-gray110;
+		}
+
+		.ms-button-disabled {
+			border-color: darken($ms-color-white, 4.5%);
+		}
+	}
+
+	.ms-button-container:last-child {
+		.ms-button-border {
+			border-bottom-right-radius: 2px;
+			border-bottom-left-radius: 2px;
+		}
+	}
+}
