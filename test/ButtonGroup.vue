@@ -22,6 +22,16 @@
 			>
 				<f-menu slot="menu" :menu="menu" id="menu1" ref="menu1" style="top:100%"  />
 			</f-button>
+			<f-button
+				tag="a"
+				href="http://www.baidu.com"
+				text="Create account"
+				@dropdown="toggleMenu('menu1')"
+				dropdown
+				@click.native.stop
+			>
+				<f-menu slot="menu" :menu="menu" id="menu1" ref="menu1" style="top:100%"  />
+			</f-button>
 		</f-button-group>
 
 		<f-button-group size="sm" vertical :border="false">

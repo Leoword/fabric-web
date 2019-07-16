@@ -4,10 +4,10 @@
 		<f-navbar fixed>
 			<f-navbar-brand>
 				<img src="https://placekitten.com/g/30/30" alt="">
-				Navbar
+				Navbar test
 			</f-navbar-brand>
 
-			<!-- <f-navbar-toggle target="collapse 1" /> -->
+			<f-navbar-toggle target="collapse 1" />
 
 			<f-navbar-collapse id="collapse 1">
 				<f-navbar-nav>

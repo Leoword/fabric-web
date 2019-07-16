@@ -26,11 +26,13 @@ export default {
 
 <style lang="scss">
 .ms-navbar-brand {
-	display: inline-block;
-	margin-right: 16px;
+	vertical-align: top;
+	padding-right: 16px;
 	font-size: 20px;
 	line-height: inherit;
 	white-space: nowrap;
+	word-break: keep-all;
+	width: 20px;;
 	cursor: pointer;
 }
 

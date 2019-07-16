@@ -49,6 +49,10 @@ export default {
 	padding: 8px 16px;
 }
 
+nav {
+	width: 100%;
+}
+
 .ms-navbar-fixed {
 	position: fixed;
 	top: 0;
@@ -66,17 +70,33 @@ export default {
 }
 
 @media (min-width: $ms-screen-min-lg) and (max-width: $ms-screen-max-xxl) {
-	.ms-navbar .ms-navbar-nav {
-		display: inline-block;
+	nav {
+		display: table;
+	}
+
+	.ms-navbar-brand {
+		display: table-cell;
 	}
 
 	.ms-navbar .ms-navbar-collapse {
-		display: inline-block !important;
+		display: table-cell !important;
 	}
 }
 
 @media (min-width: 0) and (max-width: $ms-screen-max-md) {
-	.ms-navbar .ms-navbar-nav,.ms-navbar .ms-navbar-nav li{
+	nav {
+		display: block;
+	}
+
+	.ms-navbar-brand {
+		display: inline-block;
+	}
+
+	.ms-navbar .ms-navbar-collapse {
+		display: block;
+	}
+
+	.ms-navbar .ms-navbar-nav, .ms-navbar .ms-navbar-nav li{
 		display: block;
 		float: none;
 	}

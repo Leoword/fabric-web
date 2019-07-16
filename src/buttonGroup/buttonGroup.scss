@@ -122,8 +122,10 @@
 	.ms-button-container .ms-button,
 	&.ms-button-group-vertical .ms-button-container:first-child .ms-button,
 	.ms-button-container:last-child .ms-button {
-		border: none;
-		border-radius: 0px;
+		a, button {
+			border: none;
+			border-radius: 0px;
+		}
 	}
 }
 
@@ -133,31 +135,41 @@
 	}
 
 	.ms-button {
-		border-left: none;
+		a, button {
+			border-left: none;
+		}
 	}
 
 	.ms-button-container:first-child {
 
-		.ms-button {
+		.ms-button-dropdown button:first-child, .ms-button-dropdown a:first-child {
+			border-right-color: transparent;
+		}
+
+		.ms-button-dropdown button:last-child, .ms-button-dropdown a:last-child {
+			border-left-color: transparent;
+		}
+
+		.ms-button a, .ms-button button {
 			border-left: 1px solid transparent;
 		}
 		
-		.ms-button-border {
+		.ms-button-border a, .ms-button-border button {
 			border-top-left-radius: 2px;
 			border-bottom-left-radius: 2px;
 		}
 
-		.ms-button-standard {
+		.ms-button-standard a, .ms-button-standard button {
 			border-color: $ms-color-gray110;
 		}
 
-		.ms-button-disabled {
+		.ms-button-disabled a, .ms-button-disabled button {
 			border-color: darken($ms-color-white, 4.5%);
 		}
 	}
 
 	.ms-button-container:last-child {
-		.ms-button-border {
+		.ms-button-border a, .ms-button-border button {
 			border-top-right-radius: 2px;
 			border-bottom-right-radius: 2px;
 		}
@@ -170,14 +182,20 @@
 		display: block;
 	}
 
-	.ms-button {
-		position: relative;
-		border-top: none;
-		display: block;
-		width: 100%;
+	button.ms-button-dropdown {
+		height: 100% !important;
 	}
 
-	.ms-button button:first-child {
+	.ms-button, .ms-button {
+		position: relative;
+		display: block;
+		width: 100%;
+		a, button {
+			border-top: none;
+		}
+	}
+
+	.ms-button-no-split button:first-child, .ms-button-no-split a:first-child {
 		width: 100% !important;
 	}
 
@@ -197,28 +215,37 @@
 	
 	.ms-button-container:first-child {
 
-		.ms-button {
+		.ms-button a, .ms-button a {
 			border-top: 1px solid transparent;
 		}
 		
-		.ms-button-border {
+		.ms-button-border button, .ms-button-border a {
 			border-top-left-radius: 2px;
 			border-top-right-radius: 2px;
 		}
 
-		.ms-button-standard {
+		.ms-button-standard a, .ms-button-standard button {
 			border-color: $ms-color-gray110;
 		}
 
-		.ms-button-disabled {
+		.ms-button-disabled a, .ms-button-disabled button {
 			border-color: darken($ms-color-white, 4.5%);
 		}
 	}
 
 	.ms-button-container:last-child {
-		.ms-button-border {
+		.ms-button-border button, .ms-button-border a {
 			border-bottom-right-radius: 2px;
 			border-bottom-left-radius: 2px;
+		}
+
+		.ms-button-dropdown  {
+			button:first-child, a:first-child {
+				border-bottom-right-radius: 0px;
+			}
+			button:last-child, a:last-child {
+				border-bottom-left-radius: 0px;
+			}
 		}
 	}
 }
