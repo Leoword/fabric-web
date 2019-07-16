@@ -1,5 +1,5 @@
 {
-  "name": "fabric-web",
+  "name": "@or-change/fabric-ui-web",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
@@ -41,5 +41,9 @@
   },
   "dependencies": {
     "@or-change/fabric-ui": "^0.1.1"
-  }
+  },
+  "files": [
+    "/src",
+    "/index.js"
+  ]
 }
