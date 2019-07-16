@@ -1,0 +1,50 @@
+@import 'office-ui-fabric-core/src/sass/_References.scss';
+
+.ms-navbar-light {
+	.ms-navbar-brand .ms-nav-link {
+		color: $ms-color-white;
+	}
+
+	.ms-nav-link, button.ms-navbar-toggle {
+		color: darken($ms-color-white, 10%);
+		text-decoration: none;
+		background-color: transparent;
+
+		&:hover {
+			color: $ms-color-white;
+		}
+	}
+}
+
+.ms-navbar-dark {
+	.ms-navbar-brand .ms-nav-link {
+		color: #323130;
+	}
+
+	.ms-nav-link, button.ms-navbar-toggle {
+		color: lighten(#323130, 15%);
+		text-decoration: none;
+		background-color: transparent;
+
+		&:hover {
+			color: #000;
+		}
+	}
+}
+
+.ms-navbar-dark, .ms-navbar-light {
+	.ms-nav-link.ms-nav-link-disabled {
+		color: #a19f9d;
+		cursor: default;
+	}
+}
+
+.ms-variant-default {
+	background-color: #fff;
+}
+
+.ms-navbar-brand, .ms-nav-link, button.ms-navbar-toggle {
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+}

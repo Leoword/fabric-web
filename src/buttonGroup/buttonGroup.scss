@@ -118,7 +118,9 @@
 	padding: 1px;
 
 	.ms-button-container:first-child .ms-button,
+	&.ms-button-group-horizontal .ms-button-container:first-child .ms-button,
 	.ms-button-container .ms-button,
+	&.ms-button-group-vertical .ms-button-container:first-child .ms-button,
 	.ms-button-container:last-child .ms-button {
 		border: none;
 		border-radius: 0px;

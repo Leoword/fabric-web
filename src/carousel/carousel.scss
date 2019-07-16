@@ -1,0 +1,137 @@
+@import 'office-ui-fabric-core/src/sass/_References.scss';
+
+.ms-carousel {
+	display: block;
+	position: relative;
+	overflow: hidden;
+
+	button.ms-carousel-prev, button.ms-carousel-next {
+		position: absolute;
+		z-index: 500;
+		height: 100%;
+		top: 0;
+		padding: 0 15px;
+		vertical-align: middle;
+		font-size: $ms-icon-size-l;
+		color: $ms-color-white;
+		opacity: .5;
+		border: none;
+		outline: none;
+		background-color: transparent;
+
+		i {
+			display: inline;
+			font-style: normal;
+			font-weight: 700;
+			font-family: FabricMDL2Icons;
+			vertical-align: middle;
+		}
+
+		&:hover {
+			opacity: .9;
+			transition: opacity .6s ease;
+		}
+	}
+
+	button.ms-carousel-prev {
+		left: 0;
+	}
+
+	button.ms-carousel-next {
+		right: 0;
+	}
+
+	ol.ms-carousel-indicator {
+		position: absolute;
+		z-index: 500;
+		display: block;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			box-sizing: content-box;
+			width: 30px;
+			height: 4px;
+			margin: 0 4px;
+			cursor: pointer;
+			background-color: $ms-color-white;
+			opacity: .5;
+			background-clip: padding-box;
+			border-top: 15px solid transparent;
+			border-bottom: 15px solid transparent;
+			
+			&:hover, &.ms-carousel-indicator-active {
+				opacity: .9;
+				transition: opacity .6s ease;
+			}
+		}
+	}
+
+	&.ms-carousel-animation {
+		&.ms-carousel-fade {
+			.ms-carousel-slide {
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				z-index: 100;
+				display: block;
+			}
+	
+			.ms-carousel-slide-active{
+				opacity: 1;
+				z-index: 300;
+				transition: opacity .5s ease;
+			}
+		}
+	}
+
+
+	.ms-carousel-slide {
+		display: none;
+		height: 100%;
+		width: 100%;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.ms-carousel-slide-active{
+		display: block;
+	}
+}
+
+.ms-carousel-slide {
+	.ms-carousel-slide-caption {
+		position: absolute;
+		z-index: 400;
+		right: 15%;
+		bottom: 20px;
+		left: 15%;
+		padding: 10px 0;
+		color: #fff;
+		text-align: center;
+
+		h3, p {
+			width: 100%;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+
+		h3 {
+			margin-bottom: 5px;
+			font-size: 25px;
+			font-weight: 500;
+		}
+
+		p {
+			font-size: 16px;
+		}
+	}
+}

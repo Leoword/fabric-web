@@ -31,10 +31,7 @@ module.exports = {
 			},
 			{
 				test: /\.(eot|woff|woff2|svg|ttf)$/,
-				loader: 'file-loader',
-				options: {
-					publicPath: '/dist/style'
-				}
+				loader: 'file-loader'
 			},
 			{
 				test: /\.scss$/,
@@ -50,7 +47,7 @@ module.exports = {
 		extensions: ['.js', '.vue']
 	},
 	plugins: [
-		new ExtractTextPlugin('style/[name].css'),
+		new ExtractTextPlugin('[name].css'),
 		new VueLoaderPlugin()
 	]
 };

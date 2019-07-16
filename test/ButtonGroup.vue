@@ -24,7 +24,35 @@
 			</f-button>
 		</f-button-group>
 
+		<f-button-group size="sm" vertical :border="false">
+			<f-button text="test1" :disabled="true" />
+			<f-button text="test1" />
+			<f-button text="test1" />
+			<f-button
+				icon="ms-Icon ms-Icon--Emoji2"
+				dropdown
+				triangle
+				size="sm"
+			/>
+			<f-button
+				tag="a"
+				href="http://www.baidu.com"
+				text="Create account"
+				@dropdown="toggleMenu('menu1')"
+				dropdown split
+				@click.native.stop
+			>
+				<f-menu slot="menu" :menu="menu" id="menu1" ref="menu1" style="top:100%"  />
+			</f-button>
+		</f-button-group>
+
 		<f-button-group :border="false">
+			<f-button
+				icon="ms-Icon ms-Icon--Emoji2"
+				dropdown
+				triangle
+				size="sm"
+			/>
 			<f-button text="test1" variant="primary" :disabled="true" />
 			<f-button text="test1" variant="primary" />
 			<f-button text="test1" variant="primary"  />

@@ -31,11 +31,6 @@ export default {
 	mixins: [mixin],
 	mounted() {
 		const isWarning = this.$slots.default.filter(tabItem => {
-			if (tabItem.componentOptions) {
-
-				tabItem.componentOptions.propsData.size="sm";
-			}
-
 			return tabItem.tag && (!tabItem.componentOptions || tabItem.componentOptions.tag !== 'f-button');
 		})
 			.length > 0;
