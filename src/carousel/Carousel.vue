@@ -20,14 +20,14 @@
 			@click="activeCarouselSlide(activeSlide - 1)"
 			v-show="control"
 		>
-			<i class="ms-Icon ms-Icon--ChevronLeftSmall"></i>
+			<i :class="$fabricWeb.icon.leftSmall"></i>
 		</button>
 		<button
 			class="ms-carousel-next"
 			@click="activeCarouselSlide(activeSlide + 1)"
 			v-show="control"
 		>
-			<i class="ms-Icon ms-Icon--ChevronRightSmall"></i>
+			<i :class="$fabricWeb.icon.rightSmall"></i>
 		</button>
 		<ol
 			class="ms-carousel-indicator"

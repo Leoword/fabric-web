@@ -25,7 +25,7 @@
 
 		</f-navbar>
 
-		<f-navbar type="dark" variant="default" sticky>
+		<f-navbar type="dark" variant="default">
 			<f-navbar-brand>
 				<img src="https://placekitten.com/g/30/30" alt="">
 				Navbar

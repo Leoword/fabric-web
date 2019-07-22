@@ -3,8 +3,8 @@
 		@click="toggleCollapse"
 	>
 		<slot>
-			<i class="ms-Icon ms-Icon--AlignJustify" v-show="!isExpand"></i>
-			<i class="ms-Icon ms-Icon--Cancel" v-show="isExpand"></i>
+			<i :class="$fabricWeb.icon.alignJustify" v-show="!isExpand"></i>
+			<i :class="$fabric.icon.cancel" v-show="isExpand"></i>
 		</slot>
 	</button>
 </template>

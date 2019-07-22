@@ -86,7 +86,7 @@
 			</f-button>
 		</f-button-group>
 
-		<f-button-group>
+		<f-button-group size="lg">
 			<f-button
 				icon="ms-Icon ms-Icon--Add"
 				:border="false"

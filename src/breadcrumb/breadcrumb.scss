@@ -1,0 +1,74 @@
+@import 'office-ui-fabric-core/src/sass/_References.scss';
+
+.ms-breadcrumb {
+	width: 100%;
+	height: auto;
+	display: block;
+	word-break: break-all;
+	background-color: transparent;
+
+	.ms-breadcrumb-item-container {
+		display: block;
+		float: left;
+		padding-left: 6px;
+	}
+
+	.ms-breadcrumb-item{
+		display: inline-block;
+		box-sizing: border-box;
+		cursor: pointer;
+		color: $ms-color-gray160;
+		font-weight: $ms-font-weight-regular;
+		background-color: transparent;
+
+		&:hover{
+			color: $ms-color-gray190;
+			background-color: rgb(243, 242, 241);
+		}
+	}
+
+	.ms-breadcrumb-item-disabled{
+		cursor: default;
+		color: $ms-color-gray90;
+	
+		&:hover {
+			color: $ms-color-gray90;
+			background-color: transparent;
+		}
+	}
+	
+	.ms-breadcrumb-item-active {
+		font-weight: $ms-font-weight-semibold;
+	}
+	
+	.ms-breadcrumb-split {
+		&::before {
+			display: inline-block;
+			color: #6c757d;
+			content: "/";
+		}
+	}
+
+	i.ms-split {
+		font-size: $ms-font-size-12;
+		vertical-align: middle;
+	}
+}
+
+.ms-breadcrumb-sm {
+	.ms-breadcrumb-item {
+		font-size: $ms-font-size-12;
+	}
+}
+
+.ms-breadcrumb-md {
+	.ms-breadcrumb-item  {
+		font-size: $ms-font-size-14;
+	}
+}
+
+.ms-breadcrumb-lg {
+	.ms-breadcrumb-item {
+		font-size: $ms-font-size-16;
+	}
+}

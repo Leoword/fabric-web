@@ -30,8 +30,8 @@ export default {
 	},
 	mixins: [mixin],
 	mounted() {
-		const isWarning = this.$slots.default.filter(tabItem => {
-			return tabItem.tag && (!tabItem.componentOptions || tabItem.componentOptions.tag !== 'f-button');
+		const isWarning = this.$slots.default.filter(button => {
+			return button.tag && (!button.componentOptions || button.componentOptions.tag !== 'f-button');
 		})
 			.length > 0;
 
