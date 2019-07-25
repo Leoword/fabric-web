@@ -1,6 +1,6 @@
 <template>
 	<span
-		class="ms-breadcrumb-item-container"
+		class="ms-breadcrumb-item-container ms-clearfix"
 	>
 		<a
 			class="ms-breadcrumb-item"

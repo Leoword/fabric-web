@@ -1,5 +1,6 @@
 import '@or-change/fabric-ui-font';
-import FabricUI from '@or-change/fabric-ui';
+// import FabricUI from '@or-change/fabric-ui';
+import FabricUI from '../../fabric-ui';
 import UIPlugin from "../index";
 import Vue from 'vue/dist/vue.esm.js';
 
