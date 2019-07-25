@@ -5,7 +5,11 @@
 		color: $ms-color-white;
 	}
 
-	.ms-nav-link, button.ms-navbar-toggle {
+	.ms-nav-link,
+	button.ms-navbar-toggle,
+	.ms-nav-button .ms-button button,
+	.ms-nav-button .ms-button a
+	{
 		color: darken($ms-color-white, 10%);
 		text-decoration: none;
 		background-color: transparent;
@@ -14,6 +18,10 @@
 			color: $ms-color-white;
 		}
 	}
+
+	.ms-nav-button .ms-button .ms-dropdown-triangle {
+		border-color: darken($ms-color-white, 10%) transparent transparent transparent;
+	}
 }
 
 .ms-navbar-dark {
@@ -21,7 +29,10 @@
 		color: #323130;
 	}
 
-	.ms-nav-link, button.ms-navbar-toggle {
+	.ms-nav-link, button.ms-navbar-toggle,
+	.ms-nav-button .ms-button button,
+	.ms-nav-button .ms-button a
+	{
 		color: lighten(#323130, 15%);
 		text-decoration: none;
 		background-color: transparent;
@@ -44,7 +55,6 @@
 }
 
 .ms-navbar-brand, .ms-nav-link, button.ms-navbar-toggle {
-	display: inline-block;
 	height: 40px;
 	line-height: 40px;
 }

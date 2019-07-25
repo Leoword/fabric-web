@@ -23,6 +23,7 @@ export default {
 <style lang="scss">
 .ms-navbar-nav {
 	display: inline-block;
+	vertical-align: top;
 }
 
 .ms-navbar-nav-right {

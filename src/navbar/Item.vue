@@ -29,9 +29,9 @@ export default {
 <style lang="scss">
 .ms-nav-item {
 	display: inline-block;
+	vertical-align: middle;
 	padding: 0 8px;
 	font-size: 16px;
-	vertical-align: middle;
 }
 </style>
 
